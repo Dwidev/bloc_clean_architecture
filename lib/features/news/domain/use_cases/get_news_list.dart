@@ -34,10 +34,8 @@ class GetNewsList {
         );
       }
 
-      print("KE USECASE $listNews");
       return Success(listNews);
     } catch (e) {
-      print("ERROR KESINI GA");
       return Error(GlobalFailure(e.toString()));
     }
   }
